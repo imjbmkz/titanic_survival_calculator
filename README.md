@@ -36,6 +36,8 @@ Six models were trained and included in the calculator to give its individual su
 | `XGBClassifier`            | {'learning_rate': 0.01, 'max_depth': 3, 'n_estimators': 1000, 'subsample': 0.5}  |
 
 ### Survival prediction and probability calculator
+![Titanic Survival Calculator web app](titanic_calc_snap.png)
+
 All six models were used to make an ensemble of their predictions that will serve as the final estimation of the user's chances of surviving. The web form was created using **[`streamlit`](https://streamlit.io/)**. It presents each model's prediction and calculated probability of surviving the Titanic incident. The user enters the inputs using the `streamlit` widgets, and clicks `Calculate` button to get the prediction and probability per model, and their ensemble and final decision.
 
 ### Scripts used
