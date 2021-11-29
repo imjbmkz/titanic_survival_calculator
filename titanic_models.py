@@ -10,7 +10,7 @@ from sklearn.ensemble import RandomForestClassifier
 from xgboost.sklearn import XGBClassifier
 
 ## Read data from CSV and make it a pandas dataframe
-titanic = pd.read_csv('titanic_cleaned.csv')
+titanic = pd.read_csv('https://raw.githubusercontent.com/imjbmkz/titanic_survival_calculator/main/titanic_cleaned.csv')
 
 ## Split features and response variable
 x = titanic.drop(labels='survived', axis=1)
