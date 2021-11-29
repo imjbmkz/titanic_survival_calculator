@@ -4,7 +4,7 @@ from math import isnan
 import pandas as pd
 
 ## Read data from CSV and make it a pandas dataframe
-titanic = pd.read_csv('titanic.csv')
+titanic = pd.read_csv('https://raw.githubusercontent.com/imjbmkz/titanic_survival_calculator/main/titanic.csv')
 
 ## Drop samples with missing `survived` (response)
 titanic.dropna(axis=0, subset=['survived'], inplace=True)
