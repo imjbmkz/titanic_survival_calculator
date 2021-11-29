@@ -41,7 +41,7 @@ Six models were trained and included in the calculator to give its individual su
 All six models were used to make an ensemble of their predictions that will serve as the final estimation of the user's chances of surviving. The web form was created using **[`streamlit`](https://streamlit.io/)**. It presents each model's prediction and calculated probability of surviving the Titanic incident. The user enters the inputs using the `streamlit` widgets, and clicks `Calculate` button to get the prediction and probability per model, and their ensemble and final decision.
 
 ### Scripts used
-This repository contains three scripts that were used for every stage of this project. Note that each scripts has dependencies on certain `.csv` files.
-- `titanic_preprocess.py` reads and processes the Titanic dataset to arrive at the version that will be used for data modeling; `titanic.csv` needs to be in the same repository to work
-- `titanic_models.py` trains six models and fits data in each model that went through hyperparameter tuning to get the best parameters; `titanic_cleaned.csv` needs to be in the same repository to work
-- `titanic_calc_app.py` launches the `streamlit` web form where a user supplies input data to get survival predictions and likelihood; `titanic_cleaned.csv` needs to be in the same repository to work; to run, type `streamlit run titanic_calc_app.py` on the console
+This repository contains three scripts that were used for every stage of this project. Each script pulls the source data from this repository. 
+- `titanic_preprocess.py` reads and processes the Titanic dataset to arrive at the version that will be used for data modeling; `titanic.csv` is read from this repository
+- `titanic_models.py` trains six models and fits data in each model that went through hyperparameter tuning to get the best parameters; `titanic_cleaned.csv` is read from this repository
+- `titanic_calc_app.py` launches the `streamlit` web form where a user supplies input data to get survival predictions and likelihood; `titanic_cleaned.csv` is read from this repository; to run, type `streamlit run titanic_calc_app.py` on the console
